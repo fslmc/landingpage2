@@ -1,0 +1,268 @@
+body, h1, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-primary{
+    background-color: #f5f5f5;
+    color: #FF0068;
+    border-color: #FF0068;
+}
+
+.btn-primary:hover {
+    animation: fade-in 0.5s;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 rgba(255, 0, 104, 0.5);
+    }
+    100% {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(255, 0, 104, 0.5);
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.header {
+    background-color: #FF0068;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.skew-c{
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to left bottom, #fff 49%, #FF0068 50%);
+  }
+
+.service-section-wrapper{
+    background-color: #FF0068;
+    --mask:
+    radial-gradient(20.16px at 50% 28.2px,#000 99%,#0000 101%) calc(50% - 24px) 0/48px 51% repeat-x,
+    radial-gradient(20.16px at 50% -16.2px,#0000 99%,#000 101%) 50% 12px/48px calc(51% - 12px) repeat-x,
+    radial-gradient(20.16px at 50% calc(100% - 28.2px),#000 99%,#0000 101%) calc(50% - 24px) 100%/48px 51% repeat-x,
+    radial-gradient(20.16px at 50% calc(100% + 16.2px),#0000 99%,#000 101%) 50% calc(100% - 12px)/48px calc(51% - 12px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+.service-section{
+      /* se it doesn't stick to left */
+  padding-left: 5vw;
+  /* graphing paper */
+  background-image: conic-gradient(from 90deg at 1px 1px, transparent 25%, rgba(255, 255, 255, 0.1) 0%);
+  background-size: 0.5rem 0.5rem;
+}
+
+.copywriting-section{
+    color: white;
+}
+
+.package {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+.package-header {
+    background-color: white;
+    color: #FF0068;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+.promo-price {
+    color: yellow;
+    font-size: 24px;
+    font-weight: bold;
+}
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.header h1, .header p {
+    text-align: left;
+  }
+
+  .header img.img-fluid {
+    max-width: 300px; /* adjust the width to your liking */
+    height: auto;
+  }
+
+  .why-us-section {
+    background-color: #f7f7f7; /* light gray background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .icon-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon-box i {
+    font-size: 40px;
+    color: #FF0068; /* blue color */
+    margin-bottom: 10px;
+  }
+  
+  .icon-box-content {
+    text-align: center;
+  }
+  
+  .icon-box-content h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .icon-box-content p {
+    font-size: 16px;
+    color: #666;
+  }
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .fade-in.show {
+    opacity: 1;
+  }
+
+  .motto-section {
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+  
+  .motto-section h2 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .motto-section p {
+    font-size: 18px;
+    color: #666;
+  }
+
+  .owl-carousel {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .owl-carousel .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* adjust the height to your liking */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out; /* add transition effect */
+  }
+  
+  .owl-carousel .item img.vertical-image {
+    width: fit-content;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    z-index: 1;
+  }
+  
+  .owl-carousel .owl-nav button {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .owl-carousel .owl-nav button:hover {
+    background-color: #ddd;
+  }
+  
+  .owl-carousel .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .owl-carousel .owl-dots .owl-dot.active {
+    background-color: #337ab7;
+  }
+
+  .owl-carousel .item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .owl-carousel .item img {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .owl-carousel .item img {
+      height: 150px;
+    }
+  }
+
+  /* Wave Separator */
